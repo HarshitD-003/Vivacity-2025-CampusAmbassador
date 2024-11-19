@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 //app.use(cors());
 
 app.use(cors({
-      origin: "*", // Allow both origins
+      origin: ["https://vivacity-2025-campus-ambassador-xqvd.vercel.app", "http://localhost:5173"], // Allow both origins
       credentials:true,            //access-control-allow-credentials:true
       optionSuccessStatus:200
   }));
