@@ -62,7 +62,7 @@ const CaLoginForm = () => {
         try {
             setIsLoading(true);
             const user = await axios.post(
-                '${BASE_URL}/auth/login',
+                `${BASE_URL}/auth/login`,
                 // 'http://localhost:3000/auth/login',
                 {
                     email: LoginEmail,
