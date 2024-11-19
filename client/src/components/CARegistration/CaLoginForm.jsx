@@ -12,6 +12,8 @@ const CaLoginForm = () => {
     //   L O G I N   S E C T I O N
 
     const navigate = useNavigate();
+    const production=import.meta.env.VITE_PRODUCTION;
+    const BASE_URL = (production=='true'?import.meta.env.VITE_BASE_URL_BACKEND:'http://localhost:8000');
 
     const [LoginEmail, setLoginEmail] = useState('');
     const [LoginPassword, setLoginPassword] = useState('');
@@ -60,7 +62,7 @@ const CaLoginForm = () => {
         try {
             setIsLoading(true);
             const user = await axios.post(
-                'https://vivacity2k24.onrender.com/auth/login',
+                '${BASE_URL}/auth/login',
                 // 'http://localhost:3000/auth/login',
                 {
                     email: LoginEmail,
