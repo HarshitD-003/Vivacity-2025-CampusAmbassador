@@ -217,6 +217,12 @@ const CaForm = () => {
                     personaldetails: personal_details,
                     collegedetails: college_details,
                 },
+                {
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'Access-Control-Allow-Origin': "https://vivacity-2025-campus-ambassador.vercel.app/",
+              },
+            }
             );
             console.log(response.data);
             setLoading(false);

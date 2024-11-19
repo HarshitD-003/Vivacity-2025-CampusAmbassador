@@ -68,6 +68,12 @@ const CaLoginForm = () => {
                     email: LoginEmail,
                     password: LoginPassword,
                 },
+                {
+                    headers: {
+                      'Content-Type': 'application/json',
+                      'Access-Control-Allow-Origin': "https://vivacity-2025-campus-ambassador.vercel.app/",
+              },
+            }
             );
 
             // cookie settings
