@@ -41,8 +41,8 @@ async function run() {
       const mongouri: string | undefined = process.env.MONGO_URI;
       await connect(`${mongouri}`);
       console.log('DB active');
-      app.listen(3000, () => {
-            console.log('Server active on port|3000');
+      app.listen(8000, () => {
+            console.log('Server active on port|8000');
       });
 }
 
