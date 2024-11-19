@@ -210,7 +210,7 @@ const CaForm = () => {
         try {
             setLoading(true);
             const response = await axios.post(
-                '${BASE_URL}/auth/signup',
+                `${BASE_URL}/auth/signup`,
                 {
                     personaldetails: personal_details,
                     collegedetails: college_details,
