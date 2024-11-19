@@ -13,6 +13,8 @@ import NormalButton from '../components/NormalRegistration/NormalButton';
 
 const NormalRegistration = () => {
     //default values
+    const production=import.meta.env.VITE_PRODUCTION;
+    const BASE_URL = (production=='true'?import.meta.env.VITE_BASE_URL_BACKEND:'http://localhost:8000');
     const defaultPersonal = {
         name: '',
         email: '',
@@ -231,7 +233,7 @@ const NormalRegistration = () => {
                     : [],
         };
         const res = await fetch(
-            'https://vivacity2k24.onrender.com/register/registerUser',
+            '${BASE_URL}/register/registerUser',
             {
                 method: 'POST',
                 headers: {
