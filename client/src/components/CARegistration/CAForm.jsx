@@ -8,6 +8,9 @@ import axios from 'axios';
 
 import { CircularProgress } from '@mui/material';
 
+const production=import.meta.env.VITE_PRODUCTION;
+const BASE_URL = (production=='true'?import.meta.env.VITE_BASE_URL_BACKEND:'http://localhost:8000');
+
 const stateValues = [
     'Andaman and Nicobar Islands',
     'Andhra Pradesh',
@@ -207,7 +210,7 @@ const CaForm = () => {
         try {
             setLoading(true);
             const response = await axios.post(
-                'https://vivacity2k24.onrender.com/auth/signup',
+                '${BASE_URL}/auth/signup',
                 {
                     personaldetails: personal_details,
                     collegedetails: college_details,
