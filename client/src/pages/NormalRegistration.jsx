@@ -233,7 +233,7 @@ const NormalRegistration = () => {
                     : [],
         };
         const res = await fetch(
-            '${BASE_URL}/register/registerUser',
+            `${BASE_URL}/register/registerUser`,
             {
                 method: 'POST',
                 headers: {
