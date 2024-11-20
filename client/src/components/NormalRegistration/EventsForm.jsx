@@ -27,6 +27,7 @@ const EventsForm = ({ change, add, event, isReset, reset }) => {
         'Dance Events': [
             'Razzamatazz',
             "Let's Tangle",
+            'Jhankaar',
             'Mudra',
             'Pump It Up',
             'Street Dance',
@@ -48,7 +49,7 @@ const EventsForm = ({ change, add, event, isReset, reset }) => {
             'Photo Booth',
             'Image Hunt',
         ],
-        'Fashion Events': ['Vogue'],
+        'Fashion Events': ['Vogue', 'Mr. and Miss Viva'],
     };
     const [options, setOptions] = useState(categoryOptions);
 

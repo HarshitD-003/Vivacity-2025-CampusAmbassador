@@ -10,9 +10,9 @@ const Home = () => {
             <div className="m-0 p-0 overflow-y-scroll snap-mandatory snap-y h-screen">
                 <Navbar />
                 <Hero />
-                <ArtistLineup />
+                {/* <ArtistLineup /> */}
                 {/* <AfterMovie/> */}
-                <Sponsors />
+                {/* <Sponsors /> */}
                 <Footer />
             </div>
         </>
