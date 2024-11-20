@@ -31,7 +31,7 @@ const WhyCA = () => {
             });
         }
 
-        handleScroll(); // Call the function on initial load
+        handleScroll();
         window.addEventListener('scroll', handleScroll);
 
         return () => {
