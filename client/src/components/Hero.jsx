@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import vid from '../assets/viva_hero_video.mp4';
 
 const Hero = () => {
     const navigate = useNavigate();
@@ -26,7 +27,7 @@ const Hero = () => {
             <video
                 ref={videoRef}
                 className="absolute inset-0 w-full h-full object-cover"
-                src="src/assets/viva_hero_video.mp4"
+                src={vid}
                 autoPlay
                 muted
                 playsInline
@@ -50,7 +51,6 @@ const Hero = () => {
                     </span>
                 </button>
             </div>
-            <div className="absolute inset-0 bg-black bg-opacity-50"></div>
         </div>
     );
 };
