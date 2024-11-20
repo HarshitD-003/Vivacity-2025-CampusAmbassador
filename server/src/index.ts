@@ -9,7 +9,6 @@ import userRouter from './routes/userRoute';
 import eventrouter from './routes/eventroute';
 
 import { RouteProtector } from './middlewares/auth.middleware';
-
 const app: Express = express();
 
 dotenv.config({
@@ -27,11 +26,16 @@ app.use(express.urlencoded({ extended: true }));
 
 //app.use(cors());
 
-app.use(cors({
-      origin: ["https://vivacity-2025-campus-ambassador-xqvd.vercel.app", "http://localhost:5173"], // Allow both origins
-      credentials:true,            //access-control-allow-credentials:true
-      optionSuccessStatus:200
-  }));
+app.use(
+      cors({
+            origin: [
+                  'https://vivacity-2025-campus-ambassador-xqvd.vercel.app',
+                  'http://localhost:5173',
+            ], // Allow both origins
+            credentials: true, //access-control-allow-credentials:true
+            optionSuccessStatus: 200,
+      }),
+);
 
 app.use(express.json());
 app.use(cookieParser());
@@ -40,7 +44,7 @@ mongoose.set('strictQuery', false);
 
 app.use('/auth', authRouter);
 app.use('/user', userRouter);
-app.use('/register',eventrouter);
+app.use('/register', eventrouter);
 app.use('/', RouteProtector);
 
 async function run() {
