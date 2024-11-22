@@ -20,7 +20,7 @@ app.use(
                   'https://vivacity-2025-campus-ambassador.vercel.app',
                   'http://localhost:5173',
             ], // Allow both origins
-            credentials: true, // access-control-allow-credentials:true
+            //credentials: true, // access-control-allow-credentials:true
             optionsSuccessStatus: 200,
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Add allowed methods
       }),
