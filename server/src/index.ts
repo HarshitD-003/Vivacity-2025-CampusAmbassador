@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(
       cors({
             origin: [
-                  'https://vivacity-2025-campus-ambassador-xqvd.vercel.app',
+                  'https://vivacity-2025-campus-ambassador.vercel.app',
                   'http://localhost:5173',
             ], // Allow both origins
             credentials: true, //access-control-allow-credentials:true
