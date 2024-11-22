@@ -20,7 +20,7 @@ const DisplayEvents = ({ events, submit, isLoading }) => {
             </div>
             <p className="text-white px-4">
                 <span className=" text-red-400">*</span> Add all the events you
-                wish to register for Vivacity 2k24 before submitting.{' '}
+                wish to register for Vivacity 2k25 before submitting.{' '}
             </p>
             {isLoading ? (
                 <CircularProgress />
