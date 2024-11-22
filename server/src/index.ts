@@ -14,18 +14,6 @@ const app: Express = express();
 dotenv.config({
       path: './.env',
 });
-
-app.use(express.urlencoded({ extended: true }));
-/*app.use(
-      cors({
-            //origin: {'http://localhost:5173',}
-	origin : "https://vivacity-2k24-o8s3.vercel.app/",
-	optionsSuccessStatus : 200
-      }),
-);*/
-
-//app.use(cors());
-
 app.use(
       cors({
             origin: [
@@ -37,6 +25,18 @@ app.use(
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Add allowed methods
       }),
 );
+app.use(express.urlencoded({ extended: true }));
+/*app.use(
+      cors({
+            //origin: {'http://localhost:5173',}
+	origin : "https://vivacity-2k24-o8s3.vercel.app/",
+	optionsSuccessStatus : 200
+      }),
+);*/
+
+//app.use(cors());
+
+
 app.options('*', cors()); // Handle preflight
 
 app.use(express.json());
