@@ -6,10 +6,14 @@ import Gdg from '../assets/Gdg.png';
 
 const Footer = () => {
     return (
-        <footer className='flex flex-col text-center' style={{
-            background: 'rgb(60,0,85)',
-            background: 'linear-gradient(0deg, rgba(40,1,56,1) 0%, rgba(0,0,0,1) 21%)'
-        }}>
+        <footer
+            className="flex flex-col text-center"
+            style={{
+                background: 'rgb(60,0,85)',
+                background:
+                    'linear-gradient(0deg, rgba(40,1,56,1) 0%, rgba(0,0,0,1) 21%)',
+            }}
+        >
             <div className="snap-start flex flex-col lg:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
                 {' '}
                 <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left pl-5">
@@ -75,24 +79,22 @@ const Footer = () => {
                 </div>
             </div>
             <div>
-                <div
-                className="z-10 text-white bottom-0 w-full flex justify-center items-center "
-            >
-                <a
-                    href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <p className="font-poppins text-[12px] sm:text-[16px] xsm:text-[10px] md:text-2xl font-normal tracking-[0.16em] text-center">
-                        <img
-                            src={Gdg}
-                            alt="GDG logo"
-                            className="inline-block w-8 h-8 mr-3"
-                        />
-                        Designed and Developed by GDG on Campus, LNMIIT
-                    </p>
-                </a>
-            </div>
+                <div className="z-10 text-white bottom-0 w-full flex justify-center items-center ">
+                    <a
+                        href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <p className="font-bruno text-[12px] sm:text-[16px] xsm:text-[10px] md:text-2xl font-normal tracking-[0.16em] text-center">
+                            <img
+                                src={Gdg}
+                                alt="GDG logo"
+                                className="inline-block w-8 h-8 mr-3"
+                            />
+                            Designed and Developed by GDG on Campus, LNMIIT
+                        </p>
+                    </a>
+                </div>
             </div>
         </footer>
     );
