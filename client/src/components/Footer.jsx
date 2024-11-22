@@ -14,9 +14,9 @@ const Footer = () => {
                     'linear-gradient(0deg, rgba(40,1,56,1) 0%, rgba(0,0,0,1) 21%)',
             }}
         >
-            <div className="snap-start flex flex-col lg:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
+            <div className="snap-start flex flex-col sm:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
                 {' '}
-                <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left pl-5">
+                <div className="sm:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left sm:pl-5">
                     <h1 className="text-4xl font-bold">Contact Us</h1>
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col items-center lg:items-start pl-4">
@@ -35,12 +35,12 @@ const Footer = () => {
                 </div>
                 <div className="grow flex items-center justify-center max-w-[600px]">
                     <img
-                        className="w-2/3 object-contain h-auto max-w-[500px] "
+                        className="w-1/2 object-contain h-auto max-w-[500px] "
                         src={Logo}
                         alt="Viva Logo"
                     />
                 </div>
-                <div className="grow flex items-center flex-col gap-6 w-1/4">
+                <div className="grow flex items-end flex-col gap-6 sm:w-1/4 sm:pr-5">
                     <h1 className="text-4xl font-bold">Socials</h1>
                     <div className="flex flex-col gap-6 rounded-lg border-2 border-gray-400 p-4 hover:shadow-lg hover:shadow-gray-700 transition-shadow duration-150">
                         <div className="flex gap-6">

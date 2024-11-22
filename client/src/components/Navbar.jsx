@@ -9,8 +9,8 @@ const Navbar = () => {
 
     return (
         <header className="flex bg-transparent text-white text-xl z-50 justify-between items-center min-h-[15vh] py-4 border-b-1 border-gray-300 w-full px-24 absolute top-0 left-0">
-            <div className="flex items-center justify-center w-[11vw] h-[11vw] lg:w-[11vh] lg:h-[11vh]">
-                <img src={Logo} alt="Logo" className=" h-[8vw] lg:h-[8vh]" />
+            <div className="flex items-center justify-center ">
+                <img src={Logo} alt="Logo" className=" h-[6rem] w-[6rem]" />
             </div>
 
             <div className='gap-5 hidden sm:flex'>

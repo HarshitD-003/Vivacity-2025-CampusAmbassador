@@ -33,13 +33,17 @@ const Hero = () => {
                 playsInline
             />
             <div className="relative z-10 h-full flex flex-col justify-center items-center text-center space-y-2">
-                <h1 className="text-8xl text-purple-200 cursor-default select-none hover:text-purple-300 transition-all duration-300 delay-100 font-bold animate-bounce font-mabry">
+                <h1 className="text-6xl sm:text-8xl text-transparent bg-clip-text bg-gradient-to-l from-orange-500 via-fuchsia-600 to-blue-400 cursor-default select-none transition-all duration-300 delay-100 font-bold animate-bounce font-mabry pb-4"
+                style={{
+                    WebkitTextStroke: "0.5px #4A4947", // Text stroke for WebKit browsers
+                    textStroke: "0.5px #4A4947",       // Standard property (for future support)
+                  }}>
                     Road to Vivacity
                 </h1>
                 <div className="flex gap-3">
                     <button
                         onClick={() => navigate('/NormalRegistration')}
-                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)]"
+                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-3 sm:px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)]"
                     >
                         <div className="absolute inset-0 overflow-visible [container-type:size]">
                             <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]">
@@ -47,13 +51,13 @@ const Hero = () => {
                             </div>
                         </div>
                         <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
-                        <span className="relative whitespace-pre text-center text-lg font-semibold leading-none tracking-tight  z-10 font-mabry">
+                        <span className="relative whitespace-pre text-center text-base font-semibold leading-none tracking-tight  z-10 font-mabry">
                             Register Now
                         </span>
                     </button>
                     <button
                         onClick={e => navigate('/caportal')}
-                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
+                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-3 sm:px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
                     >
                         <div className="absolute inset-0 overflow-visible [container-type:size]">
                             <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none] group-hover:opacity-0">
@@ -68,7 +72,7 @@ const Hero = () => {
                 </div>
                 <button
                 onClick={e => navigate('/caportal')}
-                className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
+                className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-3 sm:px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
                 >
                 <div className="absolute inset-0 overflow-visible [container-type:size]">
                     <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none] group-hover:opacity-0">
