@@ -3,6 +3,7 @@ import Logo from '../assets/vivalogo.png';
 import { useNavigate } from 'react-router-dom';
 import { useRef } from 'react';
 import './button.css';
+import pdff from '../assets/VivacityEventBrochure.pdf';
 const Navbar = () => {
     const navigate = useNavigate();
 
@@ -13,9 +14,9 @@ const Navbar = () => {
             </div>
 
             <div className='gap-5 hidden sm:flex'>
-
+            <a href={pdff} target="_blank" rel="noopener noreferrer">
             <button
-                onClick={e => navigate('/caportal')}
+                
                 className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)]"
                 >
                 <div className="absolute inset-0 overflow-visible [container-type:size]">
@@ -24,10 +25,12 @@ const Navbar = () => {
                     </div>
                 </div>
                 <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
-                <span className="relative whitespace-pre text-center text-base font-semibold leading-none tracking-tight  z-10 font-mabry">
-                    Event Brochure
-                </span>
+               
+            <span className="relative whitespace-pre text-center text-base font-semibold leading-none tracking-tight z-10 font-mabry">
+                Event Brochure
+            </span>
             </button>
+            </a>
             <button
                 onClick={e => navigate('/caportal')}
                 className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)]"
@@ -47,4 +50,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default Navbar; 

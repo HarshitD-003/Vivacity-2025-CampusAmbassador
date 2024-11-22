@@ -7,7 +7,7 @@ import incen_org_1 from '../../assets/incen_org_1.webp';
 import incen_org_3 from '../../assets/incen_org_3.webp';
 import incen_org_4 from '../../assets/incen_org_4.webp';
 import './CardIncentives.css';
-import Brochure from '../../assets/Events-Brochure_organized.pdf';
+//import Brochure from '../../assets/Events-Brochure_organized.pdf';
 
 import classes from '../UserProfile/UserProfile.module.css';
 

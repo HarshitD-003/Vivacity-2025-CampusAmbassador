@@ -16,20 +16,20 @@ const Footer = () => {
         >
             <div className="snap-start flex flex-col lg:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
                 {' '}
-                <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
+                <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left pl-5">
                     <h1 className="text-4xl font-bold">Contact Us</h1>
                     <div className="flex flex-col gap-4">
-                        <div className="flex flex-col items-center lg:items-start">
+                        <div className="flex flex-col items-center lg:items-start pl-4">
                             <p className="text-xl font-semibold text-gray-200">
                                 Chirag Jain
                             </p>
                             <p className="text-gray-400">+91 82792 62220</p>
                         </div>
-                        <div className="flex flex-col items-center lg:items-start">
+                        <div className="flex flex-col items-center lg:items-start pl-4">
                             <p className="text-xl font-semibold text-gray-200">
-                                Bhavyam Madhrani
+                                Ankur Arora
                             </p>
-                            <p className="text-gray-400">+91 99989 27041</p>
+                            <p className="text-gray-400">+91 90247 98061</p>
                         </div>
                     </div>
                 </div>

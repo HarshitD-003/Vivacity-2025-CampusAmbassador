@@ -10,7 +10,7 @@ const RegistrationSuccessful = () => {
                 <br />
                 You have successfully registered for
                 <br />
-                Vivacity 2024
+                Vivacity 2025
             </h1>
             <p className="text-white w-2/3 mx-auto md:text-xl">
                 You will shortly be contacted by our team for payment
