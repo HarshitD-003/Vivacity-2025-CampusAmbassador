@@ -36,20 +36,50 @@ const Hero = () => {
                 <h1 className="text-8xl text-purple-200 cursor-default select-none hover:text-purple-300 transition-all duration-300 delay-100 font-bold animate-bounce font-mabry">
                     Road to Vivacity
                 </h1>
-                <button
-                    onClick={() => navigate('/NormalRegistration')}
-                    className="text-white dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 [background:var(--bg)] [border-radius:var(--radius)] transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center hover:shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset]"
-                >
-                    <div className="absolute inset-0 overflow-visible [container-type:size]">
-                        <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]">
-                            <div className="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"></div>
+                <div className="flex gap-3">
+                    <button
+                        onClick={() => navigate('/NormalRegistration')}
+                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)]"
+                    >
+                        <div className="absolute inset-0 overflow-visible [container-type:size]">
+                            <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none]">
+                                <div className="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"></div>
+                            </div>
                         </div>
+                        <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
+                        <span className="relative whitespace-pre text-center text-lg font-semibold leading-none tracking-tight  z-10 font-mabry">
+                            Register Now
+                        </span>
+                    </button>
+                    <button
+                        onClick={e => navigate('/caportal')}
+                        className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
+                    >
+                        <div className="absolute inset-0 overflow-visible [container-type:size]">
+                            <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none] group-hover:opacity-0">
+                                <div className="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"></div>
+                            </div>
+                        </div>
+                        <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
+                        <span className="relative whitespace-pre text-center text-base font-semibold leading-none tracking-tight  z-10 font-mabry">
+                            Event Brochure
+                        </span>
+                    </button>
+                </div>
+                <button
+                onClick={e => navigate('/caportal')}
+                className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
+                >
+                <div className="absolute inset-0 overflow-visible [container-type:size]">
+                    <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none] group-hover:opacity-0">
+                        <div className="absolute inset-[-100%] w-auto rotate-0 animate-spin [background:conic-gradient(from_calc(270deg-(var(--spread)*0.5)),transparent_0,hsl(0_0%_100%/1)_var(--spread),transparent_var(--spread))] [translate:0_0]"></div>
                     </div>
-                    <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
-                    <span className="relative whitespace-pre text-center text-lg font-semibold leading-none tracking-tight text-white z-10 font-mabry">
-                        Register Now
-                    </span>
-                </button>
+                </div>
+                <div className="absolute [background:var(--bg)] [border-radius:var(--radius)] [inset:var(--cut)]"></div>
+                <span className="relative whitespace-pre text-center text-base font-semibold leading-none tracking-tight  z-10 font-mabry">
+                    CA Portal
+                </span>
+            </button>
             </div>
         </div>
     );
