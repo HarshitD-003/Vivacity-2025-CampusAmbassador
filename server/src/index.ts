@@ -37,7 +37,7 @@ app.use(
             methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH'], // Add allowed methods
       }),
 );
-
+app.options('*', cors()); // Handle preflight
 
 app.use(express.json());
 app.use(cookieParser());
