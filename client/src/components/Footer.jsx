@@ -2,71 +2,97 @@ import { Facebook, Instagram, LinkedIn, YouTube } from '@mui/icons-material';
 import Logo from '../assets/viva_logo_25.png';
 import { Link } from 'react-router-dom';
 import classes from './Footer.module.css';
+import Gdg from '../assets/Gdg.png';
 
 const Footer = () => {
     return (
-        <footer className="snap-start flex flex-col lg:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
-            {' '}
-            <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
-                <h1 className="text-4xl font-bold">Contact Us</h1>
-                <div className="flex flex-col gap-4">
-                    <div className="flex flex-col items-center lg:items-start">
-                        <p className="text-xl font-semibold text-gray-200">
-                            Chirag Jain
-                        </p>
-                        <p className="text-gray-400">+91 82792 62220</p>
+        <footer className='flex flex-col text-center' style={{
+            background: 'rgb(60,0,85)',
+            background: 'linear-gradient(0deg, rgba(40,1,56,1) 0%, rgba(0,0,0,1) 21%)'
+        }}>
+            <div className="snap-start flex flex-col lg:flex-row gap-10  bg-transparent text-white justify-around items-center px-4 py-12 border-t  border-gray-300">
+                {' '}
+                <div className="w-full lg:w-1/4 flex flex-col items-center lg:items-start gap-6 text-center lg:text-left">
+                    <h1 className="text-4xl font-bold">Contact Us</h1>
+                    <div className="flex flex-col gap-4">
+                        <div className="flex flex-col items-center lg:items-start">
+                            <p className="text-xl font-semibold text-gray-200">
+                                Chirag Jain
+                            </p>
+                            <p className="text-gray-400">+91 82792 62220</p>
+                        </div>
+                        <div className="flex flex-col items-center lg:items-start">
+                            <p className="text-xl font-semibold text-gray-200">
+                                Bhavyam Madhrani
+                            </p>
+                            <p className="text-gray-400">+91 99989 27041</p>
+                        </div>
                     </div>
-                    <div className="flex flex-col items-center lg:items-start">
-                        <p className="text-xl font-semibold text-gray-200">
-                            Bhavyam Madhrani
-                        </p>
-                        <p className="text-gray-400">+91 99989 27041</p>
+                </div>
+                <div className="grow flex items-center justify-center max-w-[600px]">
+                    <img
+                        className="w-2/3 object-contain h-auto max-w-[500px] "
+                        src={Logo}
+                        alt="Viva Logo"
+                    />
+                </div>
+                <div className="grow flex items-center flex-col gap-6 w-1/4">
+                    <h1 className="text-4xl font-bold">Socials</h1>
+                    <div className="flex flex-col gap-6 rounded-lg border-2 border-gray-400 p-4 hover:shadow-lg hover:shadow-gray-700 transition-shadow duration-150">
+                        <div className="flex gap-6">
+                            <Link
+                                to="https://www.youtube.com/@VivacityLNMIIT"
+                                className="text-gray-300 hover:text-red-500 transition-colors duration-150"
+                                target="__blank"
+                            >
+                                <YouTube fontSize="large" />
+                            </Link>
+                            <Link
+                                to="https://www.instagram.com/vivacity_lnmiit/"
+                                className="text-gray-300 hover:text-pink-400 transition-colors duration-150"
+                                target="__blank"
+                            >
+                                <Instagram fontSize="large" />
+                            </Link>
+                        </div>
+                        <div className="flex gap-6">
+                            <Link
+                                to="https://www.facebook.com/vivacity.lnmiit.5/"
+                                className="text-gray-300 hover:text-blue-600 transition-colors duration-150"
+                                target="__blank"
+                            >
+                                <Facebook fontSize="large" />
+                            </Link>
+                            <Link
+                                to="https://in.linkedin.com/company/vivacity-lnmiit"
+                                className="text-gray-300 hover:text-sky-500 transition-colors duration-150"
+                                target="__blank"
+                            >
+                                <LinkedIn fontSize="large" />
+                            </Link>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="grow flex items-center justify-center max-w-[600px]">
-                <img
-                    className="w-2/3 object-contain h-auto max-w-[500px] "
-                    src={Logo}
-                    alt="Viva Logo"
-                />
+            <div>
+                <div
+                className="z-10 text-white bottom-0 w-full flex justify-center items-center "
+            >
+                <a
+                    href="https://gdg.community.dev/gdg-on-campus-the-lnm-institute-of-information-technology-jaipur-india/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <p className="font-poppins text-[12px] sm:text-[16px] xsm:text-[10px] md:text-2xl font-normal tracking-[0.16em] text-center">
+                        <img
+                            src={Gdg}
+                            alt="GDG logo"
+                            className="inline-block w-8 h-8 mr-3"
+                        />
+                        Designed and Developed by GDG on Campus, LNMIIT
+                    </p>
+                </a>
             </div>
-            <div className="grow flex items-center flex-col gap-6 w-1/4">
-                <h1 className="text-4xl font-bold">Socials</h1>
-                <div className="flex flex-col gap-6 rounded-lg border-2 border-gray-400 p-4 hover:shadow-lg hover:shadow-gray-700 transition-shadow duration-150">
-                    <div className="flex gap-6">
-                        <Link
-                            to="https://www.youtube.com/@VivacityLNMIIT"
-                            className="text-gray-300 hover:text-red-500 transition-colors duration-150"
-                            target="__blank"
-                        >
-                            <YouTube fontSize="large" />
-                        </Link>
-                        <Link
-                            to="https://www.instagram.com/vivacity_lnmiit/"
-                            className="text-gray-300 hover:text-pink-400 transition-colors duration-150"
-                            target="__blank"
-                        >
-                            <Instagram fontSize="large" />
-                        </Link>
-                    </div>
-                    <div className="flex gap-6">
-                        <Link
-                            to="https://www.facebook.com/vivacity.lnmiit.5/"
-                            className="text-gray-300 hover:text-blue-600 transition-colors duration-150"
-                            target="__blank"
-                        >
-                            <Facebook fontSize="large" />
-                        </Link>
-                        <Link
-                            to="https://in.linkedin.com/company/vivacity-lnmiit"
-                            className="text-gray-300 hover:text-sky-500 transition-colors duration-150"
-                            target="__blank"
-                        >
-                            <LinkedIn fontSize="large" />
-                        </Link>
-                    </div>
-                </div>
             </div>
         </footer>
     );
