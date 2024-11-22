@@ -33,7 +33,7 @@ app.use(
                   'http://localhost:5173',
             ], // Allow both origins
             credentials: true, //access-control-allow-credentials:true
-            optionSuccessStatus: 200,
+            optionsSuccessStatus: 200,
       }),
 );
 
