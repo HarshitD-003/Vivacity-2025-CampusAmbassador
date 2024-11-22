@@ -238,7 +238,7 @@ const NormalRegistration = () => {
                 method: 'POST',
                     headers: {
                       'Content-Type': 'application/json',
-                      'Access-Control-Allow-Origin': "https://vivacity-2025-campus-ambassador.vercel.app/",
+                      
               },
                 body: JSON.stringify(dataToBeSent),
             },
