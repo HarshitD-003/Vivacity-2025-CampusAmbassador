@@ -1,1 +1,1 @@
-# Vivacity_2025 Coming
+# Vivacity_2025 Coming Soon
