@@ -30,7 +30,7 @@ export const signUp = async (req: Request, res: Response) => {
                   res.cookie('token', token, {
                         httpOnly: false,
                   });
-                  res.status(201).json({
+                    res.status(201).json({
                         message: 'User Signed in successfully',
                         success: true,
                         candidate,

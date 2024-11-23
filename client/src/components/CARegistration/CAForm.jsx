@@ -9,9 +9,9 @@ import axios from 'axios';
 import { CircularProgress } from '@mui/material';
 
 const production=import.meta.env.VITE_PRODUCTION;
-console.log("Production",production);
+
 const BASE_URL = (production=='true'?import.meta.env.VITE_BASE_URL_BACKEND:'http://localhost:8000');
-console.log(BASE_URL);
+
 const stateValues = [
     'Andaman and Nicobar Islands',
     'Andhra Pradesh',
@@ -210,7 +210,7 @@ const CaForm = () => {
     const SubmitHandler = async (personal_details, college_details) => {
         try {
             setLoading(true);
-            console.log("test2", BASE_URL);
+ 
             const response = await axios.post(
                 `${BASE_URL}/auth/signup`,
                 {
