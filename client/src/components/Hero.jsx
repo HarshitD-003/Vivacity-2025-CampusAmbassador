@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import vid from '../assets/viva_hero_video.mp4';
+import pdff from '../assets/VivacityEventBrochure.pdf';
 
 const Hero = () => {
     const navigate = useNavigate();
