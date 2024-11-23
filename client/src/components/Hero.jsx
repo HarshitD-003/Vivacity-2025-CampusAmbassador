@@ -55,8 +55,8 @@ const Hero = () => {
                             Register Now
                         </span>
                     </button>
+                    <a href={pdff} target="_blank" rel="noopener noreferrer">
                     <button
-                        onClick={e => navigate('/caportal')}
                         className="flex text-black dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-3 sm:px-6 transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300 w-max items-center justify-center bg-gradient-to-r from-white via-purple-300 to-purple-500 hover:bg-gradient-to-r hover:from-purple-600 hover:to-black hover:text-white [border-radius:var(--radius)] sm:hidden"
                     >
                         <div className="absolute inset-0 overflow-visible [container-type:size]">
@@ -69,6 +69,7 @@ const Hero = () => {
                             Event Brochure
                         </span>
                     </button>
+                    </a>
                 </div>
                 <button
                 onClick={e => navigate('/caportal')}
