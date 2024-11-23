@@ -21,15 +21,15 @@ const Footer = () => {
                     <div className="flex flex-col gap-4">
                         <div className="flex flex-col items-center lg:items-start pl-4">
                             <p className="text-xl font-semibold text-gray-200">
-                                Chirag Jain
+                                Ayush Dhanesha
                             </p>
-                            <p className="text-gray-400">+91 82792 62220</p>
+                            <p className="text-gray-400">+91 9998523792</p>
                         </div>
                         <div className="flex flex-col items-center lg:items-start pl-4">
                             <p className="text-xl font-semibold text-gray-200">
-                                Ankur Arora
+                                Shubhanshu Singhal
                             </p>
-                            <p className="text-gray-400">+91 90247 98061</p>
+                            <p className="text-gray-400">+91 8949024851</p>
                         </div>
                     </div>
                 </div>
