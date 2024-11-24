@@ -17,7 +17,7 @@ dotenv.config({
 app.use(
       cors({
             origin: [
-                  'https://www.vivacity.live',
+                  'https://www.vivacitylnmiit.live',
                   'https://vivacity-2025-campus-ambassador.vercel.app',
                   'http://localhost:5173',
             ], // Allow both origins
