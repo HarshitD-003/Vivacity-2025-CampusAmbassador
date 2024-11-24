@@ -8,9 +8,9 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     return (
-        <header className="flex bg-transparent text-white text-xl z-50 justify-center sm:justify-between items-center min-h-[15vh] py-4 border-b-1 border-gray-300 w-full sm:px-24 absolute top-0 left-0">
+        <header className="flex bg-transparent text-white text-xl z-50 justify-start sm:justify-between items-center min-h-[15vh] py-4 border-b-1 border-gray-300 w-full sm:px-24 absolute top-0 left-0">
             <div className="flex items-center justify-center ">
-                <img src={Logo} alt="Logo" className=" h-[6rem] w-[6rem]" />
+                <img src={Logo} alt="Logo" className=" h-[4rem] w-[4rem] sm:h-[6rem] sm:w-[6rem]" />
             </div>
 
             <div className='gap-5 hidden sm:flex'>
