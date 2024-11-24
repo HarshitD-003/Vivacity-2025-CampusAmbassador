@@ -27,7 +27,7 @@ const EventsForm = ({ change, add, event, isReset, reset }) => {
         'Dance Events': [
             'Razzamatazz',
             "Let's Tangle",
-            'Jhankaar',
+            'Taal-Tarang',
             'Mudra',
             'Pump It Up',
             'Street Dance',
