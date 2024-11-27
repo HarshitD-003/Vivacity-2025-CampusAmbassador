@@ -33,9 +33,9 @@ const Footer = () => {
                         </div>
                     </div>
                 </div>
-                <div className="grow flex items-center justify-center max-w-[600px]">
+                <div className="grow flex items-center justify-center w-1/2">
                     <img
-                        className="w-1/2 object-contain h-auto max-w-[500px] "
+                        className=" object-contain h-auto sm:max-w-[300px] max-w-[250px]"
                         src={Logo}
                         alt="Viva Logo"
                     />
