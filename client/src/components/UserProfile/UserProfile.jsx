@@ -178,24 +178,28 @@ export default function UserProfile() {
                                         <span
                                             className={`font-semibold text-xl sm:text-3xl text-gray-200`}
                                         >
-                                            Email :
-                                        </span>
-                                        <span
-                                            className={`font-normal text-xl sm:text-3xl text-violet-300`}
-                                        >
-                                            &nbsp;{UserData.email}
-                                        </span>
-                                    </div>
-                                    <div>
-                                        <span
-                                            className={`font-semibold text-xl sm:text-3xl text-gray-200`}
-                                        >
                                             Phone No. :
                                         </span>
                                         <span
                                             className={`font-normal text-xl sm:text-3xl text-violet-300`}
                                         >
                                             &nbsp;{UserData.phone_number}
+                                        </span>
+                                    </div>
+                                </div>
+                                <div
+                                    className={`flex justify-between w-full sm:flex-row flex-col gap-y-4`}
+                                >
+                                    <div>
+                                        <span
+                                            className={`font-semibold text-xl sm:text-3xl text-gray-200`}
+                                        >
+                                            Email :
+                                        </span>
+                                        <span
+                                            className={`font-normal text-xl sm:text-3xl text-violet-300`}
+                                        >
+                                            &nbsp;{UserData.email}
                                         </span>
                                     </div>
                                 </div>
