@@ -8,6 +8,7 @@ import ErrorComponent from '../ErrorComponent';
 import VivaLogo from '../../assets/VivaL.webp';
 import classes from './UserProfile.module.css';
 import AfterMovie from '../AfterMovie';
+import pdff from '../../assets/VivacityEventBrochure.pdf';
 
 export default function UserProfile() {
     const navigate = useNavigate();
@@ -37,7 +38,7 @@ export default function UserProfile() {
             const tokenToBeSent = `Bearer ${BearerToken}`;
 
             const res = await fetch(
-                `https://vivacity2k24.onrender.com/user/getuser`,
+                `https://vivacity-2025-campus-ambassador-xqvd.vercel.app/user/getuser`,
                 // `http://localhost:3000/user/getuser`,
                 {
                     method: 'POST',
@@ -116,7 +117,7 @@ export default function UserProfile() {
                         >
                             <AfterMovie />
                             <div className="flex justify-center mt-6 md:mt-20">
-                                <Link to="https://drive.google.com/u/0/uc?id=1uVtV_nn5mweW0a2mZA_mIFrHBNyWodhB&export=download">
+                                <a href={pdff} target="_blank" rel="noopener noreferrer">
                                     <button className="flex text-white dark:text-black group relative cursor-pointer overflow-hidden whitespace-nowrap h-11 px-6  [background:var(--bg)] [border-radius:var(--radius)] transition-all shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset] hover:scale-105 duration-300  w-max  items-center justify-center  hover:shadow-[0_0_0_3px_rgba(255,255,255,0.3)_inset]">
                                         <div className="absolute inset-0 overflow-visible [container-type:size]">
                                             <div className="absolute inset-0 h-[100cqh] animate-slide [aspect-ratio:1] [border-radius:0] [mask:none] ">
@@ -128,7 +129,7 @@ export default function UserProfile() {
                                             Brochure
                                         </span>
                                     </button>
-                                </Link>
+                                </a>
                             </div>
                         </section>
                         <section
