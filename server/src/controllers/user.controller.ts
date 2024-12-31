@@ -12,7 +12,6 @@ export const GetUser = async (req: Request, res: Response) => {
 
       try {
             const user = await Candidate.findById({ _id: id });
-            console.log(user);
             if (user) {
                   const user_detail = {
                         name: user.name,
