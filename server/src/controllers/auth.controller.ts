@@ -49,6 +49,7 @@ export const signUp = async (req: Request, res: Response) => {
                               },
                               body: JSON.stringify({
                                     data: {
+                                          // Personal Details
                                           Name: personaldetails.Name,
                                           Email: personaldetails.Email,
                                           PhoneNumber: personaldetails.Phone,
@@ -56,12 +57,10 @@ export const signUp = async (req: Request, res: Response) => {
                                           ReferralID: generatedRef,
                                           State: collegedetails.state,
                                           District: collegedetails.district,
-                                          CollegeName:
-                                                collegedetails.collegename,
+                                          CollegeName:collegedetails.collegename,
                                           Degree: collegedetails.degree,
                                           IsSociety: collegedetails.isSociety,
                                           Society: collegedetails.society,
-
                                           // Metadata
                                           RegisteredAt:
                                                 new Date().toISOString(),

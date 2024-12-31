@@ -5,6 +5,7 @@ import { UserValid } from '../util/helper';
 
 export const RegisterUser = async (req: Request, res: Response) => {
       const { personaldetails, eventdetails } = req.body;
+      console.log(personaldetails);
       try {
             const CA = await Candidate.findOne({
                   referral_id: personaldetails.referralCode,
@@ -68,7 +69,7 @@ export const RegisterUser = async (req: Request, res: Response) => {
                                                 // Personal Details
                                                 Name: personaldetails.name,
                                                 Email: personaldetails.email,
-                                                PhoneNumber:
+                                                MobileNumber:
                                                       personaldetails.mobile,
                                                 University:
                                                       personaldetails.university,
