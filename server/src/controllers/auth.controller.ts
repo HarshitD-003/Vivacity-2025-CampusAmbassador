@@ -30,7 +30,64 @@ export const signUp = async (req: Request, res: Response) => {
                   res.cookie('token', token, {
                         httpOnly: false,
                   });
-                    res.status(201).json({
+                  try {
+                        const sheetApiUrl = process.env.SHEET_API1;
+
+                        if (!sheetApiUrl) {
+                              console.error(
+                                    'SHEET_API environment variable is not defined.',
+                              );
+                              return res.status(500).json({
+                                    message: 'Server configuration error.',
+                              });
+                        }
+                        const response = await fetch(sheetApiUrl, {
+                              method: 'POST',
+                              headers: {
+                                    Accept: 'application/json',
+                                    'Content-Type': 'application/json',
+                              },
+                              body: JSON.stringify({
+                                    data: {
+                                          Name: personaldetails.Name,
+                                          Email: personaldetails.Email,
+                                          PhoneNumber: personaldetails.Phone,
+                                          Gender: personaldetails.Gender,
+                                          ReferralID: generatedRef,
+                                          State: collegedetails.state,
+                                          District: collegedetails.district,
+                                          CollegeName:
+                                                collegedetails.collegename,
+                                          Degree: collegedetails.degree,
+                                          IsSociety: collegedetails.isSociety,
+                                          Society: collegedetails.society,
+
+                                          // Metadata
+                                          RegisteredAt:
+                                                new Date().toISOString(),
+                                    },
+                              }),
+                        });
+
+                        const sheetResponse = await response.json();
+                        if (response.ok) {
+                              console.log(
+                                    'Data sent to Google Sheet successfully:',
+                                    sheetResponse,
+                              );
+                        } else {
+                              console.error(
+                                    'Failed to send data to Google Sheet:',
+                                    sheetResponse,
+                              );
+                        }
+                  } catch (sheetError) {
+                        console.error(
+                              'Error while sending data to Google Sheets:',
+                              sheetError,
+                        );
+                  }
+                  res.status(201).json({
                         message: 'User Signed in successfully',
                         success: true,
                         candidate,
@@ -45,7 +102,7 @@ export const signUp = async (req: Request, res: Response) => {
                   res.status(409).json({
                         error: 'Email and Phone number already registered',
                         message: 'The email address and phone number provided is already associated with an existing user account.',
-                  });                  
+                  });
             } else if (!Valid[0]) {
                   res.status(409).json({
                         error: 'Email already registered',
