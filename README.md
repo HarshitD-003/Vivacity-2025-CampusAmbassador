@@ -1,1 +1,1 @@
-# Vivacity_2025 Coming Soon
+# Vivacity_2025 CAMPUS AMBASSADOR
