@@ -22,7 +22,7 @@ export const RegisterUser = async (req: Request, res: Response) => {
                   personaldetails.email,
                   personaldetails.mobile,
             );
-            console.log(personaldetails);
+
             if (Valid[0] && Valid[1]) {
                   try {
                         const user = await normalUser.create({
@@ -40,7 +40,7 @@ export const RegisterUser = async (req: Request, res: Response) => {
                                     $push: { referred_candidates: user.name },
                               });
                         }
-                        console.log(personaldetails);
+
                         // Sending data to Google Sheet
                         try {
                               const sheetApiUrl = process.env.SHEET_API2;
