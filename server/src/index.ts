@@ -20,7 +20,7 @@ app.use(
                   'https://www.vivacitylnmiit.live',
                   'https://vivacity-2025-campus-ambassador.vercel.app',
                   'http://localhost:5173',
-		  'https://vivacity-main-website-2025.vercel.app'.
+		  'https://vivacity-main-website-2025.vercel.app',
             ], // Allow both origins
             //credentials: true, // access-control-allow-credentials:true
             optionsSuccessStatus: 200,
