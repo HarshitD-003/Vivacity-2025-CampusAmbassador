@@ -1,6 +1,5 @@
 {
   "routes": [
-    // { "src": "/[^.]+", "dest": "/", "status": 200 }  // Original route
     { "src": "/(.*)", "dest": "/maintenance.html", "status": 503 }
   ]
 }
